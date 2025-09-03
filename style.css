@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f3f4f6;
+}
+body.ambient-page {
+  background-image: url("backgrounds/forest-dusk.jpg");
+}
+
+body.timer-page {
+  background-image: url("backgrounds/night-desk.jpg");
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #cbd5e1;
+}
+
+/* Glass container */
+.container {
+  width: 90%;
+  max-width: 500px;
+  padding: 25px;
+  border-radius: 16px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
+}
+
+/* Sound sections */
+.sound {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.sound h2 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4c51bf;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Timer section */
+.timer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#time-display {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Navigation link button */
+.nav-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #2563eb;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ambient Sounds</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="ambient-page">
+    <header>
+      <h1>Ambient Sounds</h1>
+      <p>Choose relaxing sounds to help you study or relax</p>
+    </header>
+
+    <div class="container">
+      <div class="sound">
+        <h2>Birds</h2>
+        <button onclick="toggleSound('birds')">Play/Pause</button>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          onchange="setVolume('birds', this.value)"
+        />
+      </div>
+
+      <div class="sound">
+        <h2>Forest</h2>
+        <button onclick="toggleSound('forest')">Play/Pause</button>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          onchange="setVolume('forest', this.value)"
+        />
+      </div>
+
+      <div class="sound">
+        <h2>Rain</h2>
+        <button onclick="toggleSound('rain')">Play/Pause</button>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          onchange="setVolume('rain', this.value)"
+        />
+      </div>
+
+      <a href="timer.html" class="nav-btn">Go to Focus Timer</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
